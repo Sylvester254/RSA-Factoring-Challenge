@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+import sys
+def rsa():
+    """
+    Finds two primes, p and q, given only n where n = p * q
+    """
+    try:
+        file = sys.argv[1]
+        with open(file) as f:
+            for num in f:
+                num = int(num)
+                p = num // 2
+                if num % 2 == 0:
+                    print("{}={}*{}".format(num, p, 2))
+                    continue
+                i = 3
+                while i < p:
+                    if num % i == 0:
+                        q = num // i
+                        print("{}={}*{}".format(num, q, i))
+                        break
+                    i += 2
+                if i == p + 1:
+                    print("{}={}*{}".format(num, num, 1))    
+    except(FileNotFoundError):
+        print("File {} is missing".format(sys.argv[1]))
+    except(IndexError) as er:
+        print(er.args)
+
+rsa()
