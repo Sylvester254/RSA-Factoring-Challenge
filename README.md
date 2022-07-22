@@ -13,8 +13,8 @@
 ## Task 0: Factorise all the things!
 Factorize as many numbers as possible into a product of two smaller numbers.
 
-   - Usage: ```factors``` <file>
-        - where <file> is a file containing natural numbers to factor.
+   - Usage: ```factors <file>```
+        - where ```<file>``` is a file containing natural numbers to factor.
         - One number per line
         - You can assume that all lines will be valid natural numbers greater than 1
         - You can assume that there will be no empy line, and no space before and after the valid number
@@ -29,7 +29,7 @@ Factorize as many numbers as possible into a product of two smaller numbers.
     - Push all your scripts, source code, etc… to your repository
 
 ## Task 1: RSA factoring challenge
-- RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that
+RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that
 
 ```n``` = ```p``` × ```q```. The problem is to find these two primes, given only ```n```.
 
@@ -41,3 +41,5 @@ This task is the same as task 0, except:
 How far can you go in less than 5 seconds?
 
 - Read: [RSA Factoring Challenge](https://alx-intranet.hbtn.io/rltoken/Cn9Lq_kKNpNx4dmvFMuwgQ)
+# Author
+[```Sylvester K.N```](https://github.com/Sylvester254)
